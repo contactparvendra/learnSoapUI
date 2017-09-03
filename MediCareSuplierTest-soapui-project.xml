@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="24026de3-0622-4f23-9675-0c575c391b3c" activeEnvironment="Default" name="MediCareSuplierTest" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:WsdlInterface" id="76913fd3-82bb-48f4-81ca-da9e4679f32a" wsaVersion="NONE" name="MediCareSupplierSoap12" type="wsdl" bindingName="{http://www.webservicex.net/}MediCareSupplierSoap12" soapVersion="1_2" anonymous="optional" definition="http://www.webservicex.net/medicareSupplier.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint></con:endpoints><con:operation id="1b499ea3-5966-48d1-8b1c-ebc83ccb86ad" isOneWay="false" action="http://www.webservicex.net/GetSupplierByCity" name="GetSupplierByCity" bindingOperationName="GetSupplierByCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="804bccba-f24c-441a-9aa4-95ca3439836f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetSupplierByCity>\r
+         <!--Optional:-->\r
+         <web:City>?</web:City>\r
+      </web:GetSupplierByCity>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/MediCareSupplierSoap/GetSupplierByCityRequest"/></con:call></con:operation><con:operation id="e3e778c2-55bb-490e-b72b-ebc585b056d3" isOneWay="false" action="http://www.webservicex.net/GetSupplierBySupplyType" name="GetSupplierBySupplyType" bindingOperationName="GetSupplierBySupplyType" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5bbe0cb3-d555-477a-b18d-1f259f278fbc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetSupplierBySupplyType>\r
+         <!--Optional:-->\r
+         <web:description>?</web:description>\r
+      </web:GetSupplierBySupplyType>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/MediCareSupplierSoap/GetSupplierBySupplyTypeRequest"/></con:call></con:operation><con:operation id="52881d90-43fd-4903-9489-8dc3f13f9ba3" isOneWay="false" action="http://www.webservicex.net/GetSupplierByZipCode" name="GetSupplierByZipCode" bindingOperationName="GetSupplierByZipCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="da3000e4-7a84-4775-9624-f7ae57a01017" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.webservicex.net/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:GetSupplierByZipCode>\r
+         <!--Optional:-->\r
+         <web:zip>?</web:zip>\r
+      </web:GetSupplierByZipCode>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/MediCareSupplierSoap/GetSupplierByZipCodeRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="f835f748-bfed-4fa5-ab57-9cb8cfcb54f1" wsaVersion="NONE" name="MediCareSupplierSoap" type="wsdl" bindingName="{http://www.webservicex.net/}MediCareSupplierSoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/medicareSupplier.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.webservicex.net/medicareSupplier.asmx?WSDL"><con:part><con:url>http://www.webservicex.net/medicareSupplier.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.webservicex.net/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.webservicex.net/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>This section provides names, addresses, and contact information for suppliers that provide services or products under the Medicare program. A supplier is an individual or entity that has agreed to provide health care equipment, items, or services under Medicare. A supplier may provide items such as: Durable Medical Equipment (wheelchairs, walkers, oxygen), Prosthetics (artificial limb replacements or dentures) or Orthotics (mechanical devices used to assist in mobility or supplement the joints and limbs). In addition, a type of supplier can also be Pharmacy/Drug Stores and Optometry/Opticians.This Supplier Directory lists Medicare enrolled pharmacies and suppliers.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.webservicex.net/">
+      <s:element name="GetSupplierByZipCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupplierByZipCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSupplierByZipCodeResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="SupplierDataLists" type="tns:SupplierDataList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SupplierDataList">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupplierDatas" type="tns:ArrayOfSupplierData"/>
+          <s:element minOccurs="1" maxOccurs="1" name="TotalRecords" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSupplierData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SupplierData" type="tns:SupplierData"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SupplierData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SupplierNumber" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ZipPlus4" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Telephone" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="IsSupplierParticipating" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSupplierByCity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupplierByCityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSupplierByCityResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="SupplierDataLists" type="tns:SupplierDataList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupplierBySupplyType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupplierBySupplyTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSupplierBySupplyTypeResult" type="s:boolean"/>
+            <s:element minOccurs="1" maxOccurs="1" name="SupplierDataLists" type="tns:SupplierDataList"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetSupplierByZipCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupplierByZipCode"/>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierByZipCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupplierByZipCodeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierByCitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupplierByCity"/>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierByCitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupplierByCityResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierBySupplyTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupplierBySupplyType"/>
+  </wsdl:message>
+  <wsdl:message name="GetSupplierBySupplyTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupplierBySupplyTypeResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="MediCareSupplierSoap">
+    <wsdl:operation name="GetSupplierByZipCode">
+      <wsdl:documentation>Get Supplier details by Zip Code</wsdl:documentation>
+      <wsdl:input message="tns:GetSupplierByZipCodeSoapIn"/>
+      <wsdl:output message="tns:GetSupplierByZipCodeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierByCity">
+      <wsdl:documentation>Get Supplier details by City</wsdl:documentation>
+      <wsdl:input message="tns:GetSupplierByCitySoapIn"/>
+      <wsdl:output message="tns:GetSupplierByCitySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierBySupplyType">
+      <wsdl:documentation>Get Supplier details by Supply Type</wsdl:documentation>
+      <wsdl:input message="tns:GetSupplierBySupplyTypeSoapIn"/>
+      <wsdl:output message="tns:GetSupplierBySupplyTypeSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MediCareSupplierHttpGet"/>
+  <wsdl:portType name="MediCareSupplierHttpPost"/>
+  <wsdl:binding name="MediCareSupplierSoap" type="tns:MediCareSupplierSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetSupplierByZipCode">
+      <soap:operation soapAction="http://www.webservicex.net/GetSupplierByZipCode" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierByCity">
+      <soap:operation soapAction="http://www.webservicex.net/GetSupplierByCity" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierBySupplyType">
+      <soap:operation soapAction="http://www.webservicex.net/GetSupplierBySupplyType" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MediCareSupplierSoap12" type="tns:MediCareSupplierSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetSupplierByZipCode">
+      <soap12:operation soapAction="http://www.webservicex.net/GetSupplierByZipCode" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierByCity">
+      <soap12:operation soapAction="http://www.webservicex.net/GetSupplierByCity" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierBySupplyType">
+      <soap12:operation soapAction="http://www.webservicex.net/GetSupplierBySupplyType" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MediCareSupplierHttpGet" type="tns:MediCareSupplierHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="MediCareSupplierHttpPost" type="tns:MediCareSupplierHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+  <wsdl:service name="MediCareSupplier">
+    <wsdl:documentation>This section provides names, addresses, and contact information for suppliers that provide services or products under the Medicare program. A supplier is an individual or entity that has agreed to provide health care equipment, items, or services under Medicare. A supplier may provide items such as: Durable Medical Equipment (wheelchairs, walkers, oxygen), Prosthetics (artificial limb replacements or dentures) or Orthotics (mechanical devices used to assist in mobility or supplement the joints and limbs). In addition, a type of supplier can also be Pharmacy/Drug Stores and Optometry/Opticians.This Supplier Directory lists Medicare enrolled pharmacies and suppliers.</wsdl:documentation>
+    <wsdl:port name="MediCareSupplierSoap" binding="tns:MediCareSupplierSoap">
+      <soap:address location="http://www.webservicex.net/medicareSupplier.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="MediCareSupplierSoap12" binding="tns:MediCareSupplierSoap12">
+      <soap12:address location="http://www.webservicex.net/medicareSupplier.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="MediCareSupplierHttpGet" binding="tns:MediCareSupplierHttpGet">
+      <http:address location="http://www.webservicex.net/medicareSupplier.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="MediCareSupplierHttpPost" binding="tns:MediCareSupplierHttpPost">
+      <http:address location="http://www.webservicex.net/medicareSupplier.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint></con:endpoints><con:operation id="6fe128f8-1c79-4186-b41b-0c4f3ff98edb" isOneWay="false" action="http://www.webservicex.net/GetSupplierByCity" name="GetSupplierByCity" bindingOperationName="GetSupplierByCity" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="eca31790-ceab-4384-96e7-b6143ca55884" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetSupplierByCity>\r
+         <!--Optional:-->\r
+         <web:City>New York</web:City>\r
+      </web:GetSupplierByCity>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetSupplierByCity"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="f88c54a8-d0a4-4269-a45f-07d247a8c6a2" isOneWay="false" action="http://www.webservicex.net/GetSupplierBySupplyType" name="GetSupplierBySupplyType" bindingOperationName="GetSupplierBySupplyType" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="aabc3f52-3327-4042-85e8-9c3ea365cb54" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetSupplierBySupplyType>\r
+         <!--Optional:-->\r
+         <web:description>?</web:description>\r
+      </web:GetSupplierBySupplyType>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetSupplierBySupplyType"/></con:call></con:operation><con:operation id="7af4124b-0ec5-4ebd-9122-bbcaa84ac000" isOneWay="false" action="http://www.webservicex.net/GetSupplierByZipCode" name="GetSupplierByZipCode" bindingOperationName="GetSupplierByZipCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e83bc762-ee2c-496e-b2fa-b51c3165e0dc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:GetSupplierByZipCode>\r
+         <!--Optional:-->\r
+         <web:zip>?</web:zip>\r
+      </web:GetSupplierByZipCode>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webservicex.net/GetSupplierByZipCode"/></con:call></con:operation></con:interface><con:testSuite id="bc7e790c-3b1c-4fc0-a96c-fcbb2ed07380" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9aa3811f-224e-494a-abf5-c866bd37e84c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="SupplierTest1" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="cd39fd06-4820-483a-ac53-e04d9b092634"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>city</con:name><con:value>London</con:value></con:property><con:property><con:name>result</con:name><con:value>0152270001</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="a626ab8c-bcc8-4adc-a663-576560bfb479"><con:settings/><con:config><script>String pr = com.eviware.soapui.SoapUI.globalProperties.getPropertyValue("city")
+log.info pr
+String st = "Hello Worlsds"
+log.info st.substring(1,9)</script></con:config></con:testStep><con:testStep type="request" name="SupplierBycity" id="711a7ed0-b5ab-443d-8034-2c068576827d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>MediCareSupplierSoap</con:interface><con:operation>GetSupplierByCity</con:operation><con:request name="SupplierBycity" id="5a15ed22-10e2-4b23-90b1-fc64877ef87e"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/medicareSupplier.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webservicex.net/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <GetSupplierByCity xmlns="http://www.webservicex.net/">
+		<City>${#Global#city}</City>
+	</GetSupplierByCity>
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="fd8e9713-d24d-4f5d-ae1a-527f23a896b0"/><con:assertion type="Simple Contains" id="ff1f78f7-054e-4c3e-a8ad-15a4c5984e9d" name="Contains"><con:configuration><token>KMART CORP</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="XPath Match" id="a187a3f7-6459-4b90-a3e4-bd7a034755ff" name="XPath Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.webservicex.net/';
+
+//ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData[1]/ns1:SupplierNumber[1]</path><content>0127051883</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XQuery Match" id="dd3989f9-83a5-4384-9589-0259ff95f77c" name="XQuery Match"><con:configuration><path>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.webservicex.net/';
+&lt;Maximum>
+{
+max(//ns1:SupplierDataLists/ns1:SupplierDatas/ns1:SupplierData/ns1:SupplierNumber/text())
+
+}
+&lt;/Maximum></path><content>&lt;Maximum>5.199030001E9&lt;/Maximum></content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="189822fc-de6c-47c1-aad7-7b07787dd1f9" name="Script Assertion"><con:configuration><scriptText>import com.eviware.soapui.support.XmlHolder
+log.info  messageExchange.requestContentAsXml
+def holder = new XmlHolder(messageExchange.responseContentAsXml)
+holder.namespaces["ns1"] = 'http://www.webservicex.net/';
+def supDataNodes = holder.getDomNodes("//ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData/ns1:SupplierNumber/text()")
+
+log.info "Number of Suppier Data value ------>  "+supDataNodes.length
+
+supDataNodes.each{
+//	log.info it.nodeValue
+//	log.info matches(it.nodeValue, /.*/)
+	assert it.nodeValue ==~ /\d*/
+}
+
+def holder1 = new XmlHolder(messageExchange.requestContentAsXml)
+holder1.namespaces["ns1"] = 'http://www.webservicex.net/';
+def reqCity = holder.getDomNode("//ns1:City/text()")
+log.info reqCity.nodeValue</scriptText></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9ad8276f-d9f1-40e3-b7a7-c664092b5a65" name="Script Assertion 1"><con:configuration><scriptText>import com.eviware.soapui.support.XmlHolder
+def holder = new XmlHolder(messageExchange.responseContentAsXml)
+holder.namespaces["ns1"] = 'http://www.webservicex.net/'
+def maxNode = holder.getNodeValues('//ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData/ns1:SupplierNumber/text()')
+log.info maxNode.max()</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="SupplierNumber-ProprtyTransfer" id="cd26d5fd-e671-4cb1-92b2-fba46f7e21c0"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>SupplerNumber</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>SupplierBycity</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.webservicex.net/';
+
+//ns1:SupplierDataLists[1]/ns1:SupplierDatas[1]/ns1:SupplierData[1]/ns1:SupplierNumber[1]</con:sourcePath><con:targetType>SupplierNumber</con:targetType><con:targetStep>#TestCase#</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="calltestcase" name="Run TestCase" id="08d55ecf-fa9a-4493-83c8-a671a73e7782"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties/><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="goto" name="Conditional Goto" id="d4aa82b6-5fda-421a-be4d-aa2eaeec883d"><con:settings/><con:config xsi:type="con:GotoStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:condition><con:name>Condition 1</con:name><con:type>XPATH</con:type><con:expression>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.webservicex.net/';
+</con:expression><con:targetStep>Conditional Goto</con:targetStep></con:condition></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="6b55a960-0133-45f7-b80e-ee14de6a3562"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>SupplierNumber</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>SupplierBycity</con:sourceStep><con:sourcePath>declare namespace soap='http://schemas.xmlsoap.org/soap/envelope/';
+declare namespace ns1='http://www.webservicex.net/';
+
+//ns1:SupplierNumber[1]</con:sourcePath><con:targetType>result</con:targetType><con:targetStep>Properties</con:targetStep><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:loadTest id="c6e74de9-238a-40c9-a9f8-df52702e729d" name="LoadTest 1"><con:settings><con:setting id="HttpSettings@close-connections">false</con:setting></con:settings><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties><con:property><con:name>SupplierNumber</con:name><con:value>0127051883</con:value></con:property><con:property><con:name>city</con:name><con:value>Mexico</con:value></con:property></con:properties><con:securityTest id="82bc240f-9de3-473b-a94c-f397934bce29" name="SecurityTest 1" failOnError="true"><con:settings/><con:properties/></con:securityTest></con:testCase><con:properties><con:property><con:name>city</con:name><con:value>New York</con:value></con:property></con:properties></con:testSuite><con:properties><con:property><con:name>city</con:name><con:value>Paris</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
